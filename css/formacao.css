@@ -1,0 +1,72 @@
+.f-formacao {
+    background-color: var(--background-color2);
+}
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.lista-cursos-principais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px 50px;
+    
+}
+.curso-principal ,.cursos-intensivos, .idiomas {
+    position: relative;
+    border: 2px solid var(--c4);
+    border-radius: 8px;
+    background-color: var(--c3);
+    padding: 30px 20px;;
+}
+.curso-principal::before, .cursos-intensivos::before, .idiomas::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 26px;
+    background: url(/recursos/Enfeite-formacao.svg) no-repeat center;
+    position: absolute;
+    top: -27px;  
+}
+.curso-principal {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+.cursos-intensivos, .idiomas {
+    width: 800px;
+}
+.curso-intensivo, .idioma {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.curso-tipo {
+    color: var(--c5);
+    font-size: 1.2rem;
+}
+.nome-curso, .nome-idioma {
+    color: var(--c8); 
+}
+.tempo-curso, .nivel-idioma {
+    color: var(--c5);
+    font-size: 0.875rem;
+}
+@media (max-width: 1000px) {
+    .cursos-intensivos, .idiomas {
+        width: 500px;
+    }
+}
+@media (max-width: 600px) {
+    .curso-principal, .cursos-intensivos, .idiomas {
+        width: 200px;
+    }
+    .curso-tipo, .tempo-curso, .nivel-idioma {
+        font-size: 0.875rem;
+    }
+}

@@ -1,0 +1,115 @@
+.contato {
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.contato-descricao {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.circulo-info {
+    background-color: var(--primary-pink);
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    grid-row:1/4;
+}
+.circulo-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.circulo-info li p {
+    color: var(--c1);
+    font-weight: 500;
+}
+.icone-contato {
+    width: 40px;
+    height: 40px;
+}
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 15px;
+}
+.formulario-contato textarea {
+    resize: none;
+    height: 90px;
+}
+.formulario-contato input {
+    height: 50px;
+}
+.formulario-contato input, .formulario-contato textarea {
+    border: 1px solid var(--c3);
+    border-radius: 8px;
+    width: 520px;
+    background-color: var(--c2);
+}
+.formulario-contato a {
+    width: 497px;
+    height: 40px;
+    background-color: var(--primary-pink);
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--c1);
+    text-align: center;
+}
+.info-direitos {
+    border-top: 0.5px solid var(--light-pink);
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px 0px;
+    color: var(--c4);
+    letter-spacing: 9%;
+}
+@media (max-width: 1000px) {
+    .contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .circulo-info {
+        order: 1;
+    }
+    .contato-descricao {
+        padding: 0px;
+    }
+    .circulo-info {
+        width: 350px;
+        height: 350px; 
+    }
+    .circulo-info li p {
+        font-size: 1rem;
+    }
+    .icone-contato {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width: 600px) {
+    .formulario-contato input, .formulario-contato textarea {
+        width: 350px;
+    }
+    .formulario-contato a {
+        width: 330px;
+    }
+    .circulo-info {
+        width: 300px;
+        height: 300px; 
+    }
+    .circulo-info li p {
+        font-size: 0.875rem;
+    }
+    .icone-contato {
+        width: 20px;
+        height: 20px;
+    }
+}

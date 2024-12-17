@@ -1,0 +1,102 @@
+/* Resets CSS */
+body {
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: var(--c10);
+    background-color: var(--background-color1);   
+}
+a {
+    text-decoration: none;
+    padding: 10px 15px;
+}
+h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    font-family: 'Poppins';
+}
+h2 {
+    font-size: 6.7rem;
+    line-height: 1.125;
+    color: var(--c3);
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.5rem;
+}
+p {
+    font-size: 1.5rem;
+    color: var(--c7);
+}
+h1, h2, h3, p {
+    margin: 0px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+svg {
+    display: block;
+}
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 60px; 
+}
+/* Criando variáveis */
+:root {
+    --primary-pink: #DA5858;
+    --light-pink: #FFADAD;
+    --c10: #141414;
+    --c9: #292929;
+    --c8: #3d3d3d;
+    --c7: #525252;
+    --c6: #666666;
+    --c5: #7a7a7a;
+    --c4: #8f8f8f;
+    --c3: #d9d9d9;
+    --c2: #ededed;
+    --c1: #f8f8f8;
+    --background-color1: var(--c1);
+    --background-color2: var(--c2);
+}
+/* Criando variáveis para tema escuro */
+.dark {
+    --background-color1: var(--c9);
+    --background-color2: var(--c7);
+}
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }   
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.25rem;
+    }
+}
+@media (max-width: 600px) {
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+}
