@@ -7,6 +7,9 @@
     align-items: center;
     gap: 50px;
 }
+.formacao h2 {
+    color: var(--text-colorh2);
+}
 .lista-cursos-principais {
     display: flex;
     justify-content: center;
@@ -16,9 +19,9 @@
 }
 .curso-principal ,.cursos-intensivos, .idiomas {
     position: relative;
-    border: 2px solid var(--c4);
+    border: 2px solid var(--border-bloco);
     border-radius: 8px;
-    background-color: var(--c3);
+    background-color: var(--background-color1);
     padding: 30px 20px;;
 }
 .curso-principal::before, .cursos-intensivos::before, .idiomas::before {
@@ -47,14 +50,14 @@
     padding: 15px 0px;
 }
 .curso-tipo {
-    color: var(--c5);
+    color: var(--text-color3);
     font-size: 1.2rem;
 }
 .nome-curso, .nome-idioma {
-    color: var(--c8); 
+    color: var(--text-colorh3); 
 }
 .tempo-curso, .nivel-idioma {
-    color: var(--c5);
+    color: var(--text-color3);
     font-size: 0.875rem;
 }
 @media (max-width: 1000px) {

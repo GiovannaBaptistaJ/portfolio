@@ -1,28 +1,36 @@
+.onda1 {
+    fill: var(--background-color2)
+}
 .f-portfolio {
     background-color: var(--background-color2);
 }
-.portfolio {  
+
+.portfolio {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
 }
+.portfolio h2 {
+    color: var(--text-colorh2);
+}
+
 .introducao-portfolio {
     padding: 5px;
+    color: var(--text-color2);
 }
-.introducao-portfolio strong {
-    color: var(--c8);
-}
+
 .bloco-projeto {
     display: grid;
     grid-template-columns: 3fr 1.5fr;
-    border: 1px solid var(--c3);
+    border: 1px solid var(--border-bloco);
     border-radius: 8px;
-    background-color: var(--c1);
+    background-color: var(--background-color1);
     margin: 40px 50px;
     padding: 10px;
     position: relative;
     max-width: 800px;
 }
+
 .bloco-projeto::before {
     content: "";
     display: block;
@@ -34,72 +42,91 @@
     left: -21px;
     top: 20px;
 }
+
 .ano-projeto {
     position: absolute;
     font-size: 0.875rem;
     left: -70px;
     top: 25px;
     width: 80px;
+    color: var(--text-color3);
 }
+
 .projeto-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;  
+    gap: 20px;
     padding: 10px 0px;
 }
+.projeto-info h3 {
+    color: var(--text-colorh3);
+}
+
 .descricao-projeto {
     font-size: 1rem;
     line-height: 1.4;
     max-width: 60ch;
+    color: var(--text-color2);
 }
+
 .abrir-projeto {
     width: 110px;
     height: 20px;
-    background-color: var(--c2);
+    background-color: var(--background-color2);
     border: 1px solid var(--primary-pink);
-    border-radius: 8px; 
+    border-radius: 8px;
 }
+
 .abrir-projeto strong {
     font-size: 0.875rem;
-    color: var(--c8);
+    color: var(--text-color2);
 }
+
 .abrir-projeto:hover {
-    background-color: var(--primary-pink);
+    background-color: var(--light-pink);
     cursor: pointer;
 }
+
 .projeto-habilidades {
     display: flex;
     flex-wrap: wrap;
     gap: 0px 20px;
     align-content: start;
 }
+
 .hab-projeto {
-    background-color: var(--c2);
-    border: 1px solid var(--c3);
+    background-color: var(--background-color2);
+    border: 1px solid var(--border-bloco);
     border-radius: 8px;
     padding: 8px;
     margin: 10px 0px;
     line-height: 1.4;
 }
+
 @media (max-width: 1000px) {
     .bloco-projeto::before {
         transform: initial;
         left: 40px;
-        top: -26px; 
+        top: -26px;
     }
+
     .ano-projeto {
         left: 2px;
         top: -30px;
-    }    
+    }
 }
-@media (max-width: 800px) { 
+
+@media (max-width: 800px) {
     .bloco-projeto {
         display: flex;
         flex-direction: column;
     }
-    .projeto-info h3, .hab-projeto {
+
+    .projeto-info h3,
+    .hab-projeto {
         font-size: 1.10rem;
     }
+
     .descricao-projeto {
         font-size: 0.875rem;
     }

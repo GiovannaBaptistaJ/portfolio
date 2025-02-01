@@ -20,9 +20,10 @@
 }
 .sobre-titulo {
     position: relative;
+    color: var(--text-colorh1);
 }
 .sobre-subtitulo {
-    color: var(--c7);
+    color: var(--text-color2);
     padding-left: 20px;
     font-size: 2rem;
 }
@@ -32,6 +33,7 @@
 .sobre-descricao p {
     padding: 5px 0px;
     font-weight: 500;
+    color: var(--text-color1);
 }
 .sobre-icone {
     display: inline;

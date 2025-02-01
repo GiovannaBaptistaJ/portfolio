@@ -2,7 +2,6 @@
 body {
     margin: 0;
     font-family: 'Open Sans', Arial, sans-serif;
-    color: var(--c10);
     background-color: var(--background-color1);   
 }
 a {
@@ -17,15 +16,15 @@ h1 {
 h2 {
     font-size: 6.7rem;
     line-height: 1.125;
-    color: var(--c3);
     font-weight: bold;
+    font-family: 'Poppins';
+    
 }
 h3 {
     font-size: 1.5rem;
 }
 p {
     font-size: 1.5rem;
-    color: var(--c7);
 }
 h1, h2, h3, p {
     margin: 0px;
@@ -55,23 +54,29 @@ svg {
 :root {
     --primary-pink: #DA5858;
     --light-pink: #FFADAD;
-    --c10: #141414;
-    --c9: #292929;
-    --c8: #3d3d3d;
-    --c7: #525252;
-    --c6: #666666;
-    --c5: #7a7a7a;
-    --c4: #8f8f8f;
-    --c3: #d9d9d9;
-    --c2: #ededed;
-    --c1: #f8f8f8;
-    --background-color1: var(--c1);
-    --background-color2: var(--c2);
+    --text-color1: #292929;
+    --text-color2: #525252;
+    --text-color3: #7a7a7a;
+    --text-colorh1: #141414;
+    --text-colorh2: #d9d9d9;
+    --text-colorh3: #141414;
+    --border-bloco: #d9d9d9;
+    --background-color1: #f8f8f8;
+    --background-color2: #ededed;
+    --background-color3: #d9d9d9;
 }
 /* Criando variáveis para tema escuro */
 .dark {
-    --background-color1: var(--c9);
-    --background-color2: var(--c7);
+    --text-color1: #ededed;
+    --text-color2: #d9d9d9;
+    --text-color3: #8f8f8f;
+    --text-colorh1: #f8f8f8;
+    --text-colorh2: #7a7a7a;
+    --text-colorh3: #f8f8f8;
+    --border-bloco: #666666;
+    --background-color1: #292929;
+    --background-color2: #525252;
+    
 }
 @media (max-width: 1000px) {
     h1 {

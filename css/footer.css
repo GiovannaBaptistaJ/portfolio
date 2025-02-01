@@ -1,11 +1,18 @@
+.onda2 {
+    fill: var(--background-color1);
+}
 .contato {
     column-gap: 10px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
+.contato h2 {
+    color: var(--text-colorh2);
+}
 .contato-descricao {
     padding-left: 20px;
     padding-bottom: 20px;
+    color: var(--text-color1);
 }
 .circulo-info {
     background-color: var(--primary-pink);
@@ -14,7 +21,6 @@
     height: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 50px;
     grid-row:1/4;
@@ -23,9 +29,10 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-left: 30px;
 }
 .circulo-info li p {
-    color: var(--c1);
+    color: #ededed;
     font-weight: 500;
 }
 .icone-contato {
@@ -46,10 +53,10 @@
     height: 50px;
 }
 .formulario-contato input, .formulario-contato textarea {
-    border: 1px solid var(--c3);
+    border: 1px solid var(--border-bloco);
     border-radius: 8px;
     width: 520px;
-    background-color: var(--c2);
+    background-color: var(--background-color2);
 }
 .formulario-contato a {
     width: 497px;
@@ -58,7 +65,7 @@
     border-radius: 8px;
     font-size: 1.5rem;
     font-weight: 500;
-    color: var(--c1);
+    color: #ededed;
     text-align: center;
 }
 .info-direitos {
@@ -66,7 +73,7 @@
     text-align: center;
     margin-top: 30px;
     padding: 30px 0px;
-    color: var(--c4);
+    color: var(--text-color3);
     letter-spacing: 9%;
 }
 @media (max-width: 1000px) {
