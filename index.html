@@ -19,7 +19,7 @@
 
 <body>
     <header class="header">
-        <a class="header-logo" href="#sobre"><img src="recursos/marca-day.svg" alt="Logo-Giovanna" width="237"
+        <a class="header-logo" href="#sobre"><img src="recursos/Giovanna-dia.svg" alt="Logo-Giovanna" width="237"
                 height="39" id="logo-icone"></a>
         <nav class="header-menu">
             <ul class="header-menu-lista">
@@ -29,9 +29,23 @@
             </ul>
             <a href="#contato" class="header-button">CONTATO</a>
             <button class="btn-alterar-tema" id="btn-alterar-tema">
-                <img alt="Icone" src="./recursos/night-icone.svg" class="icone-tema" id="img-icone">
+                <img alt="Icone" src="./recursos/icone-tema-dia.svg" class="icone-tema" id="img-icone">
             </button>
         </nav>
+        <button id="btn-abrir-menu" class="btn-abrir-menu">
+            <img src="./recursos/menu-icone-dia.svg" class="icones-header" id="img-botao-menu" alt="botão menu">
+        </button>
+        <div class="header-menu-lateral fechado" id="header-menu-lateral">
+            <button class="btn-fechar-menu" id="btn-fechar-menu">X</button>
+            <nav>
+                <ul class="header-menu-lista-lateral">
+                    <li><a href="#sobre" class="nav-a-lateral">Sobre</a></li>
+                    <li><a href="#portfolio" class="nav-a-lateral">Portfólio</a></li>
+                    <li><a href="#formacao" class="nav-a-lateral">Formação</a></li>
+                    <li><a href="#contato" class="nav-a-lateral">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="container sobre" id="sobre">
@@ -141,7 +155,7 @@
 
 
         </div>
-       
+
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
             <path class="onda2" fill-opacity="1"
