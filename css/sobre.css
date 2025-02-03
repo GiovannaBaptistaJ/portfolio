@@ -75,4 +75,7 @@
     .sobre-subtitulo {
         padding-left: initial;
     }
+    .sobre-descricao {
+        text-align: center;
+    }
 }
