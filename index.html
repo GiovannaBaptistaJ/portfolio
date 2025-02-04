@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +12,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 </head>
 
 <body>
+     <!--Criando o cabeçalho-->
     <header class="header">
         <a class="header-logo" href="#sobre"><img src="recursos/Giovanna-dia.svg" alt="Logo-Giovanna" width="237"
                 height="39" id="logo-icone"></a>
@@ -29,7 +29,8 @@
             </ul>
             <a href="#contato" class="header-button">CONTATO</a>
             <button class="btn-alterar-tema" id="btn-alterar-tema">
-                <img alt="Icone" src="./recursos/icone-tema-dia.svg" class="icone-tema" id="img-icone">
+                <img alt="Icone-tema-página" width="46px" height="52" src="./recursos/icone-tema-dia.svg"
+                    class="icone-tema" id="img-icone">
             </button>
         </nav>
         <button id="btn-abrir-menu" class="btn-abrir-menu">
@@ -47,15 +48,16 @@
             </nav>
         </div>
     </header>
-
+     <!--Criando o conteúdo principal-->
     <main class="container sobre" id="sobre">
+         <!--Criando uma introdução-->
         <img class="sobre-img-giovanna" src="img/foto-icone.png" alt="foto-giovanna" width="540" height="540">
         <div class="sobre-informacoes">
             <h1 class="sobre-titulo">Giovanna Junges</h1>
             <h2 class="sobre-subtitulo"><strong>Estudante de ADS</strong></h2>
             <div class="sobre-descricao">
-                <p>Localizada no Rio Grande do Sul, busco estágio em desenvolvimento web.<img class="sobre-icone"
-                        src="recursos/notebook-icone.svg" alt=""></p>
+                <p>Localizada no Rio Grande do Sul, busco estágio em desenvolvimento web.<img width="44px" height="36px"
+                        class="sobre-icone" src="recursos/notebook-icone.svg" alt="icone-notebook"></p>
                 <p>Sou muito paciente e dedicada no que faço, sempre em busca de aprender e me aperfeiçoar cada vez
                     mais.</p>
             </div>
@@ -66,10 +68,10 @@
             d="M0,128L60,133.3C120,139,240,149,360,181.3C480,213,600,267,720,240C840,213,960,107,1080,69.3C1200,32,1320,64,1380,80L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
         </path>
     </svg>
+      <!--Criando uma seção com o portfólio-->
     <div class="f-portfolio">
         <section class="container portfolio" aria-label="Portfólio" id="portfolio">
             <h2>MEU PORTFÓLIO</h2>
-
             <p class="introducao-portfolio">Desenvolvo pequenos projetos utilizando apenas <strong>HTML</strong>,
                 <strong>CSS</strong> e <strong>JavaScript</strong>.
             </p>
@@ -82,8 +84,7 @@
                         <h3>Projeto Nara Doces e Tortas</h3>
                         <p class="descricao-projeto">O site tem como objetivo facilitar a adoção de pets, com um sistema
                             gratuito aonde ONGs, protetores independentes ou pessoas possam divulgar os animais.</p>
-                        <a class="abrir-projeto"
-                            href="https://giovannabaptistaj.github.io/projeto-adocao-pets/"><strong>ABRIR
+                        <a class="abrir-projeto" href=""><strong>ABRIR
                                 PROJETO</strong></a>
                     </div>
                     <ul class="projeto-habilidades">
@@ -115,7 +116,7 @@
             </div>
         </section>
     </div>
-
+     <!--Criando uma seção com formação -->
     <section class="f-formacao" id="formacao" aria-label="Formação">
         <div class="container formacao">
             <h2>FORMAÇÃO</h2>
@@ -139,7 +140,7 @@
                         <span class="tempo-curso">17h</span>
                     </li>
                     <li class="curso-intensivo">
-                        <h3 class="nome-curso">HTML5 COMPLETO e com projetos básicos para a web.</h3>
+                        <h3 class="nome-curso">UI Design para iniciantes.</h3>
                         <span class="tempo-curso">17h</span>
                     </li>
                 </ul>
@@ -165,7 +166,7 @@
         </svg>
 
     </section>
-
+    <!--Criando o footer com um formulário de contato-->
     <footer id="contato">
         <div class="container contato">
             <h2>CONTATO</h2>
@@ -188,10 +189,10 @@
                 <input placeholder="Nome" type="text">
                 <input placeholder="E-mail" type="text">
                 <textarea placeholder="Mensagem" id="" class="mensagem-contato"></textarea>
-                <a href="">ENVIAR</a>
+                <button>ENVIAR</button>
             </form>
         </div>
-        <p class="info-direitos">ALGUNS DIREITOS RESERVADOS - 2024</p>
+        <p class="info-direitos">ALGUNS DIREITOS RESERVADOS - 2025</p>
     </footer>
 </body>
 <script src="js/script.js"></script>

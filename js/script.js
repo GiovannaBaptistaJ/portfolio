@@ -1,3 +1,4 @@
+// Criando constantes e variáveis
 const btnAlterarTema = document.querySelector("#btn-alterar-tema");
 const body = document.querySelector("body");
 const temaIcone = document.querySelector("#img-icone");
@@ -11,6 +12,7 @@ const menuLateral = document.querySelector("#header-menu-lateral");
 const menuLinks = document.querySelectorAll('.nav-a-lateral');
 const btnFecharMenu = document.querySelector("#btn-fechar-menu");
 
+// Criando um evento de click, com uma função para verificar qual tema deve ser aplicado entre ou o escuro ou o claro
 btnAlterarTema.addEventListener("click", function() {
     if (temTemaEscuro) {
         body.classList.remove("dark");
@@ -26,7 +28,7 @@ btnAlterarTema.addEventListener("click", function() {
         temTemaEscuro = true;
     }
 });
-// Criando um evento de click para abrir o menu e criando um evento para quando o usuário clicar fora do menu lateral
+// Criando um evento de click para abrir o menu
 btnMenuLateral.addEventListener('click', function () {
     alternarMenu()
     console.log("teste");
