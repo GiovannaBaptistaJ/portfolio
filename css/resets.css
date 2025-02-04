@@ -1,4 +1,8 @@
-/* Resets CSS */
+/* Resets */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Open Sans', Arial, sans-serif;
@@ -61,6 +65,7 @@ svg {
 
 button {
     background: none;
+    border: none;
 }
 
 .container {
@@ -82,7 +87,6 @@ button {
     --border-bloco: #d9d9d9;
     --background-color1: #f8f8f8;
     --background-color2: #ededed;
-    --background-color3: #d9d9d9;
 }
 
 /* Criando variáveis para tema escuro */
@@ -124,11 +128,30 @@ button {
 }
 
 @media (max-width: 600px) {
+
     h2 {
         font-size: 3rem;
     }
 
     h3 {
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
     }
 }

@@ -1,12 +1,15 @@
+/* Estilos sobre */
 .sobre {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 50px;
-    align-items: center;  
+    align-items: center;
 }
+
 .sobre-img-giovanna {
-    height: 350px;  
+    height: 350px;
 }
+
 .sobre-informacoes h1::before {
     content: "";
     display: block;
@@ -18,27 +21,33 @@
     left: -40px;
     z-index: -1;
 }
+
 .sobre-titulo {
     position: relative;
     color: var(--text-colorh1);
 }
+
 .sobre-subtitulo {
     color: var(--text-color2);
     padding-left: 20px;
     font-size: 2rem;
 }
+
 .sobre-descricao {
     padding: 30px;
 }
+
 .sobre-descricao p {
     padding: 5px 0px;
     font-weight: 500;
     color: var(--text-color1);
 }
+
 .sobre-icone {
     display: inline;
-    height: 20px;   
+    height: 20px;
 }
+
 @media (max-width: 1000px) {
     .sobre-informacoes h1::before {
         background: url(/recursos/Ellipsemenor.svg) no-repeat center;
@@ -46,36 +55,61 @@
         top: -30px;
     }
 }
+
 @media (max-width: 800px) {
     .sobre {
         column-gap: 30px;
     }
+
     .sobre-img-giovanna {
         height: 250px;
     }
+
     .sobre-descricao {
         padding: 20px;
     }
 }
+
 @media (max-width: 600px) {
-    .sobre, .sobre-informacoes {
+
+    .sobre,
+    .sobre-informacoes {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .sobre {
         gap: 20px;
     }
+
     .sobre-informacoes h1::before {
         left: -30px;
     }
+
     .sobre-img-giovanna {
         height: 200px;
     }
+
     .sobre-subtitulo {
         padding-left: initial;
     }
+
     .sobre-descricao {
         text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .sobre-informacoes h1 {
+        text-align: center;
+    }
+
+    .sobre-informacoes h1::before {
+        left: -60px;
+    }
+
+    .sobre-subtitulo {
+        font-size: 1.5rem;
     }
 }

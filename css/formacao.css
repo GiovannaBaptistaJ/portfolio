@@ -1,38 +1,50 @@
+/* Estilos formação */
 .f-formacao {
     background-color: var(--background-color2);
 }
+
 .formacao {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
 }
+
 .formacao h2 {
     color: var(--text-colorh2);
 }
+
 .lista-cursos-principais {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px 50px;
-    
+
 }
-.curso-principal ,.cursos-intensivos, .idiomas {
+
+.curso-principal,
+.cursos-intensivos,
+.idiomas {
     position: relative;
     border: 2px solid var(--border-bloco);
     border-radius: 8px;
     background-color: var(--background-color1);
-    padding: 30px 20px;;
+    padding: 30px 20px;
+    ;
 }
-.curso-principal::before, .cursos-intensivos::before, .idiomas::before {
+
+.curso-principal::before,
+.cursos-intensivos::before,
+.idiomas::before {
     content: "";
     display: block;
     width: 16px;
     height: 26px;
     background: url(/recursos/Enfeite-formacao.svg) no-repeat center;
     position: absolute;
-    top: -27px;  
+    top: -27px;
 }
+
 .curso-principal {
     width: 400px;
     display: flex;
@@ -40,36 +52,65 @@
     gap: 10px;
     justify-content: space-between;
 }
-.cursos-intensivos, .idiomas {
+
+.cursos-intensivos,
+.idiomas {
     width: 800px;
 }
-.curso-intensivo, .idioma {
+
+.curso-intensivo,
+.idioma {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 0px;
 }
+
 .curso-tipo {
     color: var(--text-color3);
     font-size: 1.2rem;
 }
-.nome-curso, .nome-idioma {
-    color: var(--text-colorh3); 
+
+.nome-curso,
+.nome-idioma {
+    color: var(--text-colorh3);
 }
-.tempo-curso, .nivel-idioma {
+
+.tempo-curso,
+.nivel-idioma {
     color: var(--text-color3);
     font-size: 0.875rem;
 }
+
 @media (max-width: 1000px) {
-    .cursos-intensivos, .idiomas {
+    .cursos-intensivos,
+    .idiomas {
         width: 500px;
     }
 }
+
 @media (max-width: 600px) {
-    .curso-principal, .cursos-intensivos, .idiomas {
-        width: 200px;
+
+    .curso-principal,
+    .cursos-intensivos,
+    .idiomas {
+        width: 240px;
     }
-    .curso-tipo, .tempo-curso, .nivel-idioma {
+
+    .curso-tipo,
+    .tempo-curso,
+    .nivel-idioma {
         font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .formacao {
+        align-items: flex-start;
+        margin: 0px 10px 0px 5px;
+    }
+
+    .lista-cursos-principais {
+        justify-content: flex-start;
     }
 }
