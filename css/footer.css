@@ -104,6 +104,12 @@
         align-items: center;
         gap: 20px;
     }
+    .formulario-contato {  
+        padding-left: 0px;
+    }
+    .formulario-contato button {
+        align-self: center;
+    }
 
     .circulo-info {
         order: 1;
@@ -129,10 +135,8 @@
 }
 
 @media (max-width: 600px) {
-
     .formulario-contato input,
-    .formulario-contato textarea,
-    .formulario-contato button {
+    .formulario-contato textarea {
         width: 250px;
     }
 
