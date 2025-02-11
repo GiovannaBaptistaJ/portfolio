@@ -40,7 +40,7 @@
     display: block;
     width: 16px;
     height: 26px;
-    background: url(/recursos/Enfeite-formacao.svg) no-repeat center;
+    background: url(./../recursos/Enfeite-formacao.svg) no-repeat center;
     position: absolute;
     top: -27px;
 }
@@ -83,6 +83,7 @@
 }
 
 @media (max-width: 1000px) {
+
     .cursos-intensivos,
     .idiomas {
         width: 500px;
