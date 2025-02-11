@@ -6,9 +6,7 @@
     align-items: center;
 }
 
-.sobre-img-giovanna {
-    height: 350px;
-}
+
 
 .sobre-informacoes h1::before {
     content: "";
@@ -88,7 +86,8 @@
     }
 
     .sobre-img-giovanna {
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
     .sobre-subtitulo {
@@ -112,4 +111,10 @@
     .sobre-subtitulo {
         font-size: 1.5rem;
     }
+
+    .sobre-img-giovanna {
+        width: 200px;
+        height: 200px;
+    }
+
 }
