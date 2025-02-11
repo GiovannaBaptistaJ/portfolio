@@ -13,7 +13,7 @@
     display: block;
     width: 160px;
     height: 160px;
-    background: url(/recursos/Ellipse.svg) no-repeat center;
+    background: url(./../recursos/Ellipse.svg) no-repeat center;
     position: absolute;
     top: -10px;
     left: -40px;
@@ -48,7 +48,7 @@
 
 @media (max-width: 1000px) {
     .sobre-informacoes h1::before {
-        background: url(/recursos/Ellipsemenor.svg) no-repeat center;
+        background: url(./../recursos/Ellipsemenor.svg) no-repeat center;
         left: -70px;
         top: -30px;
     }
