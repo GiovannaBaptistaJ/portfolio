@@ -78,6 +78,10 @@ button {
 :root {
     --primary-pink: #DA5858;
     --light-pink: #FFADAD;
+    --primary-green: #0A8E4F;
+    --light-green: #79FFBE;
+    --primary-red: #8E0A0D;
+    --light-red: #FF797B;
     --text-color1: #292929;
     --text-color2: #525252;
     --text-color3: #7a7a7a;
