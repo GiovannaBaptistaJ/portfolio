@@ -58,10 +58,13 @@
 .formulario-contato textarea {
     resize: none;
     height: 90px;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
-.formulario-contato input {
-    height: 50px;
+.formulario-contato input,
+.formulario-contato textarea {
+    padding: 20px 10px;
+
 }
 
 .formulario-contato input,
@@ -97,6 +100,31 @@
     letter-spacing: 9%;
 }
 
+.bloco-form-resp {
+    position: relative;
+    left: 715px;
+    border: 2px solid var(--border-bloco);
+    color: var(--text-color1);
+    margin: 10px 0px;
+    border-radius: 8px;
+    max-width: 450px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.bloco-form-button {
+    cursor: pointer;
+    color: var(--text-color3);
+    align-self: flex-start;
+}
+
+.inacessivel {
+    display: none;
+}
+
 @media (max-width: 1000px) {
     .contato {
         display: flex;
@@ -104,9 +132,11 @@
         align-items: center;
         gap: 20px;
     }
-    .formulario-contato {  
+
+    .formulario-contato {
         padding-left: 0px;
     }
+
     .formulario-contato button {
         align-self: center;
     }
@@ -135,6 +165,7 @@
 }
 
 @media (max-width: 600px) {
+
     .formulario-contato input,
     .formulario-contato textarea {
         width: 250px;

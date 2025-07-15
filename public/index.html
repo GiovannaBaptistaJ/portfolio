@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 </head>
 
@@ -35,7 +35,8 @@
             </button>
         </nav>
         <button id="btn-abrir-menu" class="btn-abrir-menu">
-            <img src="./recursos/menu-icone-dia.svg" class="icones-header" id="icon-menu-lateral" alt="botão menu">
+            <img src="./recursos/menu-icone-dia.svg" class="icones-header" id="icon-menu-lateral" alt="botão menu"
+                width="46px" height="36px">
         </button>
         <div class="header-menu-lateral fechado" id="header-menu-lateral">
             <button class="btn-fechar-menu" id="btn-fechar-menu">X</button>
@@ -55,7 +56,7 @@
         <img class="sobre-img-giovanna" src="img/foto-icone.png" alt="foto-giovanna" width="1080" height="1080">
         <div class="sobre-informacoes">
             <h1 class="sobre-titulo">Giovanna Junges</h1>
-            <h2 class="sobre-subtitulo"><strong>Estudante de ADS</strong></h2>
+            <h2 class="sobre-subtitulo">Estudante de ADS</h2>
             <div class="sobre-descricao">
                 <p>Localizada no Rio Grande do Sul, busco estágio em desenvolvimento web.<img width="44px" height="36px"
                         class="sobre-icone" src="recursos/notebook-icone.svg" alt="icone-notebook"></p>
@@ -85,9 +86,16 @@
                         <h3>Projeto Nara Doces e Tortas</h3>
                         <p class="descricao-projeto">O site tem como objetivo divulgar o trabalho de uma confeiteira
                             independente, promovendo seus serviços e produtos.</p>
-                        <a class="abrir-projeto"
-                            href="https://giovannabaptistaj.github.io/ProjetoNaraDoceseTortas/"><strong>ABRIR
-                                PROJETO</strong></a>
+                        <div class="projeto-info-links">
+                            <a class="abrir-projeto"
+                                href="https://giovannabaptistaj.github.io/ProjetoNaraDoceseTortas/"><strong>ABRIR
+                                    PROJETO</strong></a>
+                            <div class="projeto-info-icons">
+                                <a href="https://github.com/GiovannaBaptistaJ/ProjetoNaraDoceseTortas"><img
+                                        src="recursos/icone-github.svg" alt=""></a>
+                            </div>
+                        </div>
+
                     </div>
                     <ul class="projeto-habilidades">
                         <li class="hab-projeto"><strong>HTML</strong></li>
@@ -98,14 +106,23 @@
 
                 </div>
                 <div class="bloco-projeto">
-                    <p class="ano-projeto">2024</p>
+                    <p class="ano-projeto">2025</p>
                     <div class="projeto-info">
                         <h3>Projeto Adoção Pets</h3>
                         <p class="descricao-projeto">O site tem como objetivo facilitar a adoção de pets, com um sistema
                             gratuito aonde ONGs, protetores independentes ou pessoas possam divulgar os animais.</p>
-                        <a class="abrir-projeto"
-                            href="https://giovannabaptistaj.github.io/projeto-adocao-pets/"><strong>ABRIR
-                                PROJETO</strong></a>
+                        <div class="projeto-info-links">
+                            <a class="abrir-projeto"
+                                href="https://giovannabaptistaj.github.io/projeto-adocao-pets/"><strong>ABRIR
+                                    PROJETO</strong></a>
+                            <div class="projeto-info-icons"><a
+                                    href="https://www.figma.com/design/jyT3MaHC6awpO7SKDNfc4b/Ado%C3%A7%C3%A3o-de-Pets?node-id=608-73&t=NtQT3u0wr9j5tCso-1"><img
+                                        src="recursos/icone-figma.svg" alt=""></a>
+                                <a href="https://github.com/GiovannaBaptistaJ/projeto-adocao-pets"><img
+                                        src="recursos/icone-github.svg" alt=""></a>
+                            </div>
+
+                        </div>
                     </div>
                     <ul class="projeto-habilidades">
                         <li class="hab-projeto"><strong>HTML</strong></li>
@@ -133,6 +150,11 @@
                     <h3 class="nome-curso">Programador FULL-STACK</h3>
                     <span class="tempo-curso">SENAI (2022 - 2023)</span>
                 </li>
+                <li class="curso-principal">
+                    <span class="curso-tipo"><strong>Educação básica</strong></span>
+                    <h3 class="nome-curso">Ensino Médio completo</h3>
+                    <span class="tempo-curso">IPUC (2020)</span>
+                </li>
             </ul>
             <div class="cursos-intensivos">
                 <span class="curso-tipo"><strong>Cursos intensivos</strong></span>
@@ -145,6 +167,14 @@
                         <h3 class="nome-curso">UI Design para iniciantes.</h3>
                         <span class="tempo-curso">17h</span>
                     </li>
+                    <li class="curso-intensivo">
+                        <h3 class="nome-curso">HTML e CSS para iniciantes</h3>
+                        <span class="tempo-curso">46h</span>
+                    </li>
+                    <li class="curso-intensivo">
+                        <h3 class="nome-curso">CSS Flexbox</h3>
+                        <span class="tempo-curso">6h</span>
+                    </li>
                 </ul>
             </div>
             <div class="idiomas">
@@ -152,7 +182,7 @@
                 <ul>
                     <li class="idioma">
                         <h3 class="nome-idioma">Inglês</h3>
-                        <span class="nivel-idioma">Básico</span>
+                        <span class="nivel-idioma">Intermediário</span>
                     </li>
                 </ul>
             </div>
@@ -187,12 +217,23 @@
                     <p class="github">GiovannaBaptistaJ</p>
                 </li>
             </ul>
-            <form action="https://formspree.io/f/mrbeaanq" class="formulario-contato" id="formulario-contato" method="POST">
+            <form action="https://formspree.io/f/mrbeaanq" class="formulario-contato" id="formulario-contato"
+                method="POST">
                 <input placeholder="Nome" name="nome" type="text">
                 <input placeholder="E-mail" name="email" type="text">
                 <textarea placeholder="Mensagem" name="mensagem" class="mensagem-contato"></textarea>
                 <button>ENVIAR</button>
             </form>
+        </div>
+        <div class="bloco-form-resp inacessivel" id="resp-sucesso">
+            <img class="icone-contato" src="recursos/icone-sucesso.svg" alt="">
+            <p class="form-resp">Sua mensagem foi enviada!</p>
+            <button class="bloco-form-button">X</button>
+        </div>
+        <div class="bloco-form-resp inacessivel" id="resp-erro">
+            <img class="icone-contato" src="recursos/icone-falha.svg" alt="">
+            <p class="form-resp">Erro no envio da mensagem!</p>
+            <button class="bloco-form-button">X</button>
         </div>
         <p class="info-direitos">ALGUNS DIREITOS RESERVADOS - 2025</p>
     </footer>
