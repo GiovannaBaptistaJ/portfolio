@@ -75,7 +75,7 @@
 @media (max-width: 800px) {
     .header {
         gap: 20px;
-        padding: 20px;
+        padding: 30px;
     }
 
     .header-logo {
@@ -99,6 +99,8 @@
     }
     .header-menu-lateral {
         border-radius: 8px;
+        padding: 15px 0px;
+        
     }
     .fechado {
         display: none;
@@ -106,7 +108,6 @@
     .aberto {
         display: block;
         position: relative;
-        top: 10px;
         background-color: var(--background-color2);
     }
     .btn-fechar-menu {
@@ -127,6 +128,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        
         
     }
     .nav-a-lateral {
