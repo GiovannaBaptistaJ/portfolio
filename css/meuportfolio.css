@@ -1,0 +1,176 @@
+/* Estilos meu portfólio*/
+.onda1 {
+    fill: var(--background-color2)
+}
+
+.f-portfolio {
+    background-color: var(--background-color2);
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio h2 {
+    color: var(--text-colorh2);
+    text-align: center;
+}
+
+.introducao-portfolio {
+    padding: 5px;
+    color: var(--text-color2);
+    text-align: center;
+}
+
+.bloco-projeto {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    border: 1px solid var(--border-bloco);
+    border-radius: 8px;
+    background-color: var(--background-color1);
+    margin: 40px 50px;
+    padding: 10px;
+    position: relative;
+    max-width: 800px;
+}
+
+.bloco-projeto::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 26px;
+    background: url(./../recursos/Enfeite-formacao.svg) no-repeat center;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -21px;
+    top: 20px;
+}
+
+.ano-projeto {
+    position: absolute;
+    font-size: 0.875rem;
+    left: -70px;
+    top: 25px;
+    width: 80px;
+    color: var(--text-color3);
+}
+
+.projeto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+.projeto-info h3 {
+    color: var(--text-colorh3);
+}
+
+.descricao-projeto {
+    font-size: 1rem;
+    line-height: 1.4;
+    max-width: 60ch;
+    color: var(--text-color2);
+}
+
+.projeto-info-links,
+.projeto-info-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.projeto-info-links {
+    gap: 10px;
+}
+
+.abrir-projeto {
+    max-width: max-content;
+    background-color: var(--background-color2);
+    border: 1px solid var(--primary-pink);
+    border-radius: 8px;
+
+}
+
+.abrir-projeto strong {
+    font-size: 0.875rem;
+    color: var(--text-color2);
+}
+
+.abrir-projeto:hover {
+    background-color: var(--light-pink);
+    cursor: pointer;
+}
+
+.projeto-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 20px;
+    align-content: start;
+}
+
+.hab-projeto {
+    background-color: var(--background-color2);
+    border: 1px solid var(--border-bloco);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 10px 0px;
+    line-height: 1.4;
+}
+
+@media (max-width: 1000px) {
+    .bloco-projeto {
+        margin: 60px 50px;
+    }
+
+    .bloco-projeto::before {
+        transform: initial;
+        left: 40px;
+        top: -26px;
+    }
+
+    .ano-projeto {
+        left: 2px;
+        top: -30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .bloco-projeto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projeto-info h3,
+    .hab-projeto {
+        font-size: 1.10rem;
+    }
+
+    .descricao-projeto {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .portfolio {
+        align-items: flex-start;
+    }
+
+    .projetos {
+        padding: 20px 0px;
+    }
+
+    .bloco-projeto {
+        margin: 40px 10px 60px 5px;
+    }
+
+    .introducao-portfolio {
+        text-align: left;
+    }
+
+    .hab-projeto {
+        font-size: 0.725rem;
+    }
+}

@@ -1,0 +1,145 @@
+/* Estilos header */
+.header {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-bottom: 0.5px solid var(--light-pink);
+
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px 60px;
+}
+
+.header-menu-lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header-menu-lista a {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: var(--text-color1);
+}
+
+.header-menu-lista a:hover {
+    border-bottom: 2px solid var(--primary-pink);
+}
+
+.btn-alterar-tema {
+    border: none;
+
+}
+
+.header-button {
+    border: 2px solid var(--primary-pink);
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 8px 20px;
+    color: var(--text-color1);
+}
+
+.header-button:hover {
+    background-color: var(--light-pink);
+}
+
+.btn-alterar-tema {
+    cursor: pointer;
+}
+
+.btn-abrir-menu {
+    display: none;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-abrir-menu.oculto{
+    display: none;
+}
+
+.header-menu-lateral {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .header {
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .header-logo {
+        padding: 30px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .icone-tema {
+        width: 30px;
+    }
+    .header-menu-lista {
+        display: none;
+    }
+    .header-button {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+    .header-menu-lateral {
+        border-radius: 8px;
+        padding: 15px 0px;
+        
+    }
+    .fechado {
+        display: none;
+    }
+    .aberto {
+        display: block;
+        position: relative;
+        background-color: var(--background-color2);
+    }
+    .btn-fechar-menu {
+        cursor: pointer;
+        background-color: var(--background-color2);
+        border: none;
+        border-radius: 8px;
+        border: 1px solid var(--primary-pink);
+        color: var(--text-color1);
+        padding: 10px;
+        width: 40px;
+        margin-bottom: 20px;
+    }
+    .btn-fechar-menu:hover {
+        background-color: var(--light-pink);
+    }
+    .header-menu-lista-lateral {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        
+    }
+    .nav-a-lateral {
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.3;
+        color: var(--text-color1);
+    }
+    .nav-a-lateral:hover {
+        color: var(--primary-pink);
+    }
+    
+
+}
