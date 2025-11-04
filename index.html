@@ -8,12 +8,10 @@
     <title>Giovanna Junges</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 </head>
 
@@ -23,13 +21,15 @@
         <a class="header-logo" href="#sobre"><img src="recursos/Giovanna-dia.svg" alt="Logo-Giovanna" width="237"
                 height="39" id="logo-icone"></a>
         <nav class="header-menu">
-            <ul class="header-menu-lista">
+            <ul class="header-menu-lista ">
                 <li><a href="#sobre" class="nav-a">Sobre</a></li>
                 <li><a href="#portfolio" class="nav-a">Portfólio</a></li>
                 <li><a href="#formacao" class="nav-a">Formação</a></li>
                 <li><a href="#contato" class="nav-a">Contato</a></li>
             </ul>
-            <a href="https://github.com/GiovannaBaptistaJ" class="header-button" target="_blank">GITHUB</a>
+        </nav>
+        <nav class="header-menu">
+            <a href="https://github.com/GiovannaBaptistaJ" class="botao-principal" target="_blank">GITHUB</a>
             <button class="btn-alterar-tema" id="btn-alterar-tema">
                 <img alt="Icone-tema-página" width="46px" height="52" src="./recursos/icone-tema-dia.svg"
                     class="icone-tema" id="img-icone">
@@ -55,7 +55,7 @@
     <!--Criando o conteúdo principal-->
     <main class="container sobre" id="sobre">
         <!--Criando uma introdução-->
-        <img class="sobre-img-giovanna" src="img/foto-icone.png" alt="foto-giovanna" width="1080" height="1080">
+        <img class="sobre-img-giovanna" src="img/foto-icone.png" alt="foto-giovanna" width="540" height="540">
         <div class="sobre-informacoes">
             <h1 class="sobre-titulo">Giovanna Junges</h1>
             <h2 class="sobre-subtitulo">Estudante de ADS</h2>
@@ -80,23 +80,22 @@
             </p>
             <p class="introducao-portfolio">Também realizo o <strong>UI</strong> e <strong>UX Design</strong>,
                 utilizando o <strong>Figma</strong>.</p>
-            <div class="projetos">
-                <div class="bloco-projeto">
+            <ul class="projetos">
+                <li class="bloco-projeto">
                     <p class="ano-projeto">2024</p>
                     <div class="projeto-info">
                         <h3>Projeto Nara Doces e Tortas</h3>
                         <p class="descricao-projeto">O site tem como objetivo divulgar o trabalho de uma confeiteira
                             independente, promovendo seus serviços e produtos.</p>
                         <div class="projeto-info-links">
-                            <a class="abrir-projeto"
-                                href="https://giovannabaptistaj.github.io/ProjetoNaraDoceseTortas/"><strong>ABRIR
-                                    PROJETO</strong></a>
+                            <a class="abrir-projeto botao-principal"
+                                href="https://giovannabaptistaj.github.io/ProjetoNaraDoceseTortas/">ABRIR
+                                    PROJETO</a>
                             <div class="projeto-info-icons">
                                 <a href="https://github.com/GiovannaBaptistaJ/ProjetoNaraDoceseTortas"><img
                                         src="recursos/icone-github.svg" alt=""></a>
                             </div>
                         </div>
-
                     </div>
                     <ul class="projeto-habilidades">
                         <li class="hab-projeto"><strong>HTML</strong></li>
@@ -104,25 +103,23 @@
                         <li class="hab-projeto"><strong>UI Design</strong></li>
                         <li class="hab-projeto"><strong>UX Design</strong></li>
                     </ul>
-
-                </div>
-                <div class="bloco-projeto">
+                </li>
+                <li class="bloco-projeto">
                     <p class="ano-projeto">2025</p>
                     <div class="projeto-info">
                         <h3>Projeto Adoção Pets</h3>
                         <p class="descricao-projeto">O site tem como objetivo facilitar a adoção de pets, com um sistema
                             gratuito aonde ONGs, protetores independentes ou pessoas possam divulgar os animais.</p>
                         <div class="projeto-info-links">
-                            <a class="abrir-projeto"
-                                href="https://giovannabaptistaj.github.io/projeto-adocao-pets/"><strong>ABRIR
-                                    PROJETO</strong></a>
+                            <a class="abrir-projeto botao-principal"
+                                href="https://giovannabaptistaj.github.io/projeto-adocao-pets/">ABRIR
+                                    PROJETO</a>
                             <div class="projeto-info-icons"><a
                                     href="https://www.figma.com/design/jyT3MaHC6awpO7SKDNfc4b/Ado%C3%A7%C3%A3o-de-Pets?node-id=608-73&t=NtQT3u0wr9j5tCso-1"><img
                                         src="recursos/icone-figma.svg" alt=""></a>
                                 <a href="https://github.com/GiovannaBaptistaJ/projeto-adocao-pets"><img
                                         src="recursos/icone-github.svg" alt=""></a>
                             </div>
-
                         </div>
                     </div>
                     <ul class="projeto-habilidades">
@@ -131,9 +128,8 @@
                         <li class="hab-projeto"><strong>UI Design</strong></li>
                         <li class="hab-projeto"><strong>UX Design</strong></li>
                     </ul>
-
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
     </div>
     <!--Criando uma seção com formação -->
@@ -176,6 +172,10 @@
                         <h3 class="nome-curso">CSS Flexbox</h3>
                         <span class="tempo-curso">6h</span>
                     </li>
+                    <li class="curso-intensivo">
+                        <h3 class="nome-curso">CSS Grid Layout</h3>
+                        <span class="tempo-curso">10h</span>
+                    </li>
                 </ul>
             </div>
             <div class="idiomas">
@@ -185,19 +185,18 @@
                         <h3 class="nome-idioma">Inglês</h3>
                         <span class="nivel-idioma">Intermediário</span>
                     </li>
+                    <li class="idioma">
+                        <h3 class="nome-idioma">Português</h3>
+                        <span class="nivel-idioma">Nativo</span>
+                    </li>
                 </ul>
             </div>
-
-
         </div>
-
-
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
             <path class="onda2" fill-opacity="1"
                 d="M0,128L60,133.3C120,139,240,149,360,181.3C480,213,600,267,720,240C840,213,960,107,1080,69.3C1200,32,1320,64,1380,80L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
             </path>
         </svg>
-
     </section>
     <!--Criando o footer com um formulário de contato-->
     <footer id="contato">
@@ -223,7 +222,7 @@
                 <input placeholder="Nome" name="nome" type="text">
                 <input placeholder="E-mail" name="email" type="text">
                 <textarea placeholder="Mensagem" name="mensagem" class="mensagem-contato"></textarea>
-                <button>ENVIAR</button>
+                <button class="botao-principal">ENVIAR</button>
             </form>
         </div>
         <div class="bloco-form-resp inacessivel" id="resp-sucesso">

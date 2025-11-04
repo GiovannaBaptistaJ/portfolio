@@ -75,21 +75,6 @@
     background-color: var(--background-color2);
 }
 
-.formulario-contato button {
-    width: 200px;
-    height: 40px;
-    color: var(--text-color2);
-    border: 1px solid var(--primary-pink);
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.formulario-contato button:hover {
-    cursor: pointer;
-    background-color: var(--light-pink);
-}
 
 .info-direitos {
     border-top: 0.5px solid var(--light-pink);
