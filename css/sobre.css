@@ -1,19 +1,20 @@
 /* Estilos sobre */
 .sobre {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 50px;
+    grid-template-columns: 1fr 2.5fr;
+    column-gap: 30px;
     align-items: center;
+    justify-items: end;
+    
 }
-
-
 
 .sobre-informacoes h1::before {
     content: "";
     display: block;
-    width: 160px;
-    height: 160px;
-    background: url(./../recursos/Ellipse.svg) no-repeat center;
+    width: 115px;
+    height: 115px;
+    background-color: var(--light-pink);
+    border-radius: 50%;
     position: absolute;
     top: -10px;
     left: -40px;
@@ -26,13 +27,14 @@
 }
 
 .sobre-subtitulo {
-    color: var(--text-color2);
-    padding-left: 20px;
+    color: var(--primary-pink);
+    padding-left: 30px;
     font-size: 2rem;
 }
 
 .sobre-descricao {
-    padding: 30px;
+    padding: 20px 30px;
+    max-width: 80ch;
 }
 
 .sobre-descricao p {
@@ -46,75 +48,55 @@
     height: 20px;
 }
 
+@media (max-width: 1100px) {
+    .sobre {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+    .sobre-img-giovanna {
+        width: 340px;
+    }
+    .sobre-titulo, .sobre-subtitulo, .sobre-descricao p {
+        text-align: center;
+    }
+    .sobre-informacoes h1::before {   
+        left: 20px;
+    }
+   
+}
 @media (max-width: 1000px) {
-    .sobre-informacoes h1::before {
-        background: url(./../recursos/Ellipsemenor.svg) no-repeat center;
-        left: -70px;
-        top: -30px;
+    .sobre-informacoes h1::before {   
+        left: 80px;
     }
 }
-
 @media (max-width: 800px) {
-    .sobre {
-        column-gap: 30px;
+    .sobre-informacoes h1::before {
+        width: 100px;
+        height: 100px;    
     }
-
-    .sobre-img-giovanna {
-        height: 250px;
-    }
-
-    .sobre-descricao {
-        padding: 20px;
+    .sobre-informacoes h1::before {   
+        left: 120px;
     }
 }
 
 @media (max-width: 600px) {
-
-    .sobre,
-    .sobre-informacoes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sobre {
-        gap: 20px;
-    }
-
-    .sobre-informacoes h1::before {
-        left: -30px;
-    }
-
-    .sobre-img-giovanna {
-        width: 300px;
-        height: 300px;
-    }
-
     .sobre-subtitulo {
         padding-left: initial;
     }
-
-    .sobre-descricao {
-        text-align: center;
+    .sobre-img-giovanna {
+        width: 140px;
+    }
+    .sobre-informacoes h1::before {   
+        left: 60px;
     }
 }
 
-@media (max-width: 320px) {
-    .sobre-informacoes h1 {
-        text-align: center;
+@media (max-width: 500px) {
+    .sobre-informacoes h1::before {   
+        background: none;
     }
-
-    .sobre-informacoes h1::before {
-        left: -60px;
-    }
-
     .sobre-subtitulo {
         font-size: 1.5rem;
     }
-
-    .sobre-img-giovanna {
-        width: 200px;
-        height: 200px;
-    }
-
 }

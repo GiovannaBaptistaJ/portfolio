@@ -3,7 +3,7 @@
     max-width: 1200px;
     margin: 0px auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
@@ -13,16 +13,13 @@
 
 .header-menu {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 15px 60px;
+    gap: 25px;
 }
 
 .header-menu-lista {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -42,17 +39,17 @@
 
 }
 
-.header-button {
+/* .header-button {
     border: 2px solid var(--primary-pink);
     border-radius: 8px;
     font-weight: 600;
     padding: 8px 20px;
     color: var(--text-color1);
-}
+} */
 
-.header-button:hover {
+/* .header-button:hover {
     background-color: var(--light-pink);
-}
+} */
 
 .btn-alterar-tema {
     cursor: pointer;
@@ -60,7 +57,6 @@
 
 .btn-abrir-menu {
     display: none;
-    cursor: pointer;
     border: none;
 }
 
@@ -72,14 +68,11 @@
     display: none;
 }
 
-@media (max-width: 800px) {
-    .header {
-        gap: 20px;
-        padding: 30px;
-    }
 
-    .header-logo {
-        padding: 30px 0px;
+@media (max-width: 1000px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -96,6 +89,7 @@
 
     .btn-abrir-menu {
         display: block;
+        cursor: pointer;
     }
     .header-menu-lateral {
         border-radius: 8px;

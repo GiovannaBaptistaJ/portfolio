@@ -86,24 +86,6 @@
     gap: 10px;
 }
 
-.abrir-projeto {
-    max-width: max-content;
-    background-color: var(--background-color2);
-    border: 1px solid var(--primary-pink);
-    border-radius: 8px;
-
-}
-
-.abrir-projeto strong {
-    font-size: 0.875rem;
-    color: var(--text-color2);
-}
-
-.abrir-projeto:hover {
-    background-color: var(--light-pink);
-    cursor: pointer;
-}
-
 .projeto-habilidades {
     display: flex;
     flex-wrap: wrap;
